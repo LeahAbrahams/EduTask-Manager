@@ -9,7 +9,6 @@ The project is built on the **MEAN Stack** architecture:
 * **Frontend:** Developed with **Angular 16+**. The client architecture, UI components, and logic were implemented with the assistance of AI tools.
 * **Backend:** Node.js environment utilizing the Express.js framework.
 * **Database:** MongoDB (NoSQL) managed via Mongoose ODM.
-* **Languages:** TypeScript (Frontend), JavaScript (Backend), HTML5, CSS3/SCSS.
 
 
 
