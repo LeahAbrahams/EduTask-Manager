@@ -1,47 +1,33 @@
 # EduTask-Manager
-A backend task management system built with **Node.js** and **TypeScript**, focusing on secure authentication flows and robust server-side logic.
 
-## Project Overview
-EduTask-Manager handles user tasks and administrative operations within a modular architecture. The project places a high priority on security, implementing **JWT (JSON Web Tokens)** for stateless authentication and environment-based configuration for sensitive data.
+EduTask-Manager is a full-stack academic management system designed to help students organize assignments and track deadlines efficiently.
 
-## Key Features
-* **JWT Authentication:** End-to-end implementation of token generation and secure verification middleware.
-* **Security & Environment:** Sensitive keys and configurations are managed via `dotenv` to prevent data leakage.
-* **Structured Logging:** Integrated logging system for real-time monitoring of server events, authentication flows, and errors.
-* **Type Safety:** Developed entirely in TypeScript to ensure data integrity and prevent runtime errors.
+## Technologies and Languages
 
-## Tech Stack
-* **Runtime:** Node.js
-* **Language:** TypeScript
-* **Authentication:** jsonwebtoken
-* **Configuration:** dotenv
-* **Architecture:** Middleware-based request validation.
+The project is built on the **MEAN Stack** architecture:
 
-## Installation & Setup
+* **Frontend:** Developed with **Angular 16+**. The client architecture, UI components, and logic were implemented with the assistance of AI tools.
+* **Backend:** Node.js environment utilizing the Express.js framework.
+* **Database:** MongoDB (NoSQL) managed via Mongoose ODM.
+* **Languages:** TypeScript (Frontend), JavaScript (Backend), HTML5, CSS3/SCSS.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/LeahAbrahams/EduTask-Manager.git
-    ```
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
 
-3.  **Environment Configuration:**
-    Create a `.env` file in the root directory and define the following variables:
-    ```env
-    JWT_SECRET=my_secret_key
-    PORT=3000
-    ```
+## Repository Structure
 
-4.  **Run the Project:**
-    ```bash
-    # For development (with auto-reload)
-    npm run dev
+* **/client**: Contains the Angular application, including state management, API services, and user interface logic, made by AI.
+* **/server**: Contains the REST API, database schemas (Mongoose models), and request handling.
 
-    # For production
-    npm run build
-    npm start
-    ```
+## Getting Started
+
+### Backend Setup
+1. Navigate to the server directory: `cd server`
+2. Install dependencies: `npm install`
+3. Configure your `MONGO_URI` environment variable in a `.env` file.
+4. Start the server: `npm start`
+
+### Frontend Setup
+1. Navigate to the client directory: `cd client`
+2. Install dependencies: `npm install`
+3. Launch the application: `ng serve`
+4. Access the app in your browser at: `http://localhost:4200`
