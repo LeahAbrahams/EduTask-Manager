@@ -1,0 +1,5 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="20" cy="20" r="18" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M20 8 L24 16 L32 16 L26 22 L28 30 L20 26 L12 30 L14 22 L8 16 L16 16 Z" fill="#fff"/>
+  <text x="20" y="36" text-anchor="middle" fill="#fff" font-size="6" font-family="Inter">מצוינות</text>
+</svg>

@@ -1,0 +1,766 @@
+{
+	"info": {
+		"_postman_id": "ed28e51c-487f-479b-8c60-d76ade24b008",
+		"name": "מערכת מטלות - מושלם ומוכן",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49547735",
+		"_collection_link": "https://leah-a1-2070838.postman.co/workspace/9a12ccdf-4a44-4674-8d2d-f90287509c02/collection/49547735-ed28e51c-487f-479b-8c60-d76ade24b008?action=share&source=collection_link&creator=49547735"
+	},
+	"item": [
+		{
+			"name": "1. הרשמות - 3 מורים",
+			"item": [
+				{
+					"name": "📝 הרשמה - מורה 1 (פרופ׳ דוד כהן)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"פרופ׳ דוד כהן\",\n    \"userId\": \"876543210\",\n    \"email\": \"david@teacher.com\",\n    \"password\": \"teacher456\",\n    \"role\": \"Teacher\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📝 הרשמה - מורה 2 (פרופ׳ שאול ששון)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"פרופ׳ שאול ששון\",\n    \"userId\": \"987656789\",\n    \"email\": \"shaul@teacher.com\",\n    \"password\": \"teacher987\",\n    \"role\": \"Teacher\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📝 הרשמה - מורה 3 (ד״ר רחל אברהם)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ד״ר רחל אברהם\",\n    \"userId\": \"765432109\",\n    \"email\": \"rachel@teacher.com\",\n    \"password\": \"teacher789\",\n    \"role\": \"Teacher\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "2. הרשמות - 3 תלמידים",
+			"item": [
+				{
+					"name": "📝 הרשמה - תלמיד 1 (יעלי עמר)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"יעלי עמר\",\n    \"userId\": \"098765432\",\n    \"email\": \"yeal@student.com\",\n    \"password\": \"student098\",\n    \"role\": \"Student\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📝 הרשמה - תלמיד 2 (מיכל לוי)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"מיכל לוי\",\n    \"userId\": \"234567890\",\n    \"email\": \"michal@student.com\",\n    \"password\": \"student456\",\n    \"role\": \"Student\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📝 הרשמה - תלמיד 3 (אבי שמיר)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"אבי שמיר\",\n    \"userId\": \"345678901\",\n    \"email\": \"avi@student.com\",\n    \"password\": \"student789\",\n    \"role\": \"Student\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3. התחברויות - מורים",
+			"item": [
+				{
+					"name": "🔑 התחברות - מורה 1 (פרופ׳ דוד כהן)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"פרופ׳ דוד כהן\",\n    \"email\": \"david@teacher.com\",\n    \"password\": \"teacher456\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "🔑 התחברות - מורה 2 (פרופ׳ שאול ששון)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"פרופ׳ שאול ששון\",\n    \"email\": \"shaul@teacher.com\",\n    \"password\": \"teacher987\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "🔑 התחברות - מורה 3 (ד״ר רחל אברהם)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"ד״ר רחל אברהם\",\n    \"email\": \"rachel@teacher.com\",\n    \"password\": \"teacher789\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "4. התחברויות - תלמידים",
+			"item": [
+				{
+					"name": "🔑 התחברות - תלמיד 1 (מיכל לוי)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"מיכל לוי\",\n    \"email\": \"michal@student.com\",\n    \"password\": \"student456\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "🔑 התחברות - תלמיד 2 (יעלי עמר)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"יעלי עמר\",\n    \"email\": \"yeal@student.com\",\n    \"password\": \"student098\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "🔑 התחברות - תלמיד 3 (אבי שמיר)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"אבי שמיר\",\n    \"email\": \"avi@student.com\",\n    \"password\": \"student789\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5. פעולות מורה - יצירת מטלות",
+			"item": [
+				{
+					"name": "📚 יצירת מטלה 1 - מבוא לתכנות",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NzY1NDMyMTAiLCJyb2xlIjoiVGVhY2hlciIsImlhdCI6MTc2NzUzNjkyNSwiZXhwIjoxNzc2MTc2OTI1fQ.FM8zJmO5NzzOmx5N5WnXK9zm9xJtCQgJFF-en3pIf88",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"title\": \"תרגיל 1 - מבוא לתכנות\",\n        \"description\": \"פתרון בעיות בסיסיות בתכנות Python\",\n        \"dueDate\": \"2024-12-31T23:59:00.000Z\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/teacher/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"assignments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📚 יצירת מטלה 2 - מבני נתונים",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NjU0MzIxMDkiLCJyb2xlIjoiVGVhY2hlciIsImlhdCI6MTc2NzUzNjkyOSwiZXhwIjoxNzc2MTc2OTI5fQ.rWlPaP7_q08Hfs7pCG1JBz2B5C0Mb4sztZeYUPe0yuA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"title\": \"תרגיל 2 - מבני נתונים\",\n        \"description\": \"מימוש רשימה מקושרת ועץ בינארי\",\n        \"dueDate\": \"2025-01-15T23:59:00.000Z\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/teacher/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"assignments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📚 יצירת מטלה 3 - אלגוריתמים",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NjU0MzIxMDkiLCJyb2xlIjoiVGVhY2hlciIsImlhdCI6MTc2NzUzNjkyOSwiZXhwIjoxNzc2MTc2OTI5fQ.rWlPaP7_q08Hfs7pCG1JBz2B5C0Mb4sztZeYUPe0yuA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"title\": \"תרגיל 3 - אלגוריתמי מיון\",\n        \"description\": \"מימוש אלגוריתמי QuickSort ו-MergeSort\",\n        \"dueDate\": \"2025-02-01T23:59:00.000Z\"\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/teacher/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"assignments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "7. פעולות מורה - צפייה וניהול",
+			"item": [
+				{
+					"name": "📝 צפייה בכל ההגשות",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NjU0MzIxMDkiLCJyb2xlIjoiVGVhY2hlciIsImlhdCI6MTc2NzUzNjkyOSwiZXhwIjoxNzc2MTc2OTI5fQ.rWlPaP7_q08Hfs7pCG1JBz2B5C0Mb4sztZeYUPe0yuA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/teacher/submissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"submissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "🎯 מתן ציון להגשה",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NzY1NDMyMTAiLCJyb2xlIjoiVGVhY2hlciIsImlhdCI6MTc2NzUzNjkyNSwiZXhwIjoxNzc2MTc2OTI1fQ.FM8zJmO5NzzOmx5N5WnXK9zm9xJtCQgJFF-en3pIf88",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"feedback\": \"עבודה מצוינת! הקוד נקי וקריא\",\n    \"submission\":{\n        \"grade\": 95\n    } \n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/teacher/submissions/234567890/assignmentsId?assignmentId=695a79abf30ac4f722730c16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"submissions",
+								"234567890",
+								"assignmentsId"
+							],
+							"query": [
+								{
+									"key": "assignmentId",
+									"value": "695a79abf30ac4f722730c16",
+									"description": "החלף ב-ID של המטלה"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📊 סטטיסטיקות ציונים",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NzY1NDMyMTAiLCJyb2xlIjoiVGVhY2hlciIsImlhdCI6MTc2NzUzNjkyNSwiZXhwIjoxNzc2MTc2OTI1fQ.FM8zJmO5NzzOmx5N5WnXK9zm9xJtCQgJFF-en3pIf88",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/teacher/stats/averages?studentId=234567890",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"teacher",
+								"stats",
+								"averages"
+							],
+							"query": [
+								{
+									"key": "studentId",
+									"value": "234567890",
+									"description": "ID של התלמיד"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "6.  פעולות תלמיד - צפייה והגשה",
+			"item": [
+				{
+					"name": "📚 צפייה במטלות פתוחות",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNDU2Nzg5MDEiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTc2NzUzNjk2NCwiZXhwIjoxNzc2MTc2OTY0fQ.fs2ghfCgZdiwRfKQNkQx7gSfUpUY6BLIxyYkyr3NK1s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/student/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"assignments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📝 הגשת מטלה - תלמיד 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNDU2Nzg5MDEiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTc2NzUzNjk2NCwiZXhwIjoxNzc2MTc2OTY0fQ.fs2ghfCgZdiwRfKQNkQx7gSfUpUY6BLIxyYkyr3NK1s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"assignmentId\": \"69597c71925f7b4262094c7b\",\n    \"githubLink\": \"https://github.com/yossi/assignment1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/student/submissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"submissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📝 הגשת מטלה עם שותף - תלמיד 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMzQ1Njc4OTAiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTc2NzUzNjk2MCwiZXhwIjoxNzc2MTc2OTYwfQ.UIotYT_tWmkCZdoaWu_CKr2chNE_vweLrJDmgFhAPIY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"assignmentId\": \"695a79abf30ac4f722730c16\",\n    \"githubLink\": \"https://github.com/michal/assignment1\",\n    \"partnerId\": \"345678901\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/student/submissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"submissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "📋 ההגשות שלי",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMzQ1Njc4OTAiLCJyb2xlIjoiU3R1ZGVudCIsImlhdCI6MTc2NzUzNjk2MCwiZXhwIjoxNzc2MTc2OTYwfQ.UIotYT_tWmkCZdoaWu_CKr2chNE_vweLrJDmgFhAPIY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/student/submissions/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"student",
+								"submissions",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
