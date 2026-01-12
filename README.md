@@ -43,6 +43,11 @@ This demonstrates:
 - Conceptual understanding of frontend structure and API connections
 - Problem-solving and backend system delivery
 
+## 🛠 Challenges & Learnings
+One of the main challenges in this project was implementing a secure **Authentication & Authorization** system. 
+- **The Issue:** Managing user sessions securely while using TypeScript's strict typing for request objects.
+- **The Solution:** I created custom middleware that validates JWT tokens and extends the Express Request interface to include the authenticated user's data. This ensured that only authorized users can access specific routes while maintaining type safety throughout the app.
+
 ## Getting Started
 
 ### Prerequisites
