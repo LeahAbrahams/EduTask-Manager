@@ -20,7 +20,7 @@ This project demonstrates backend development skills and integration with a fron
 - REST API design and implementation
 
 ### Frontend
-- Angular 16+ (generated using AI-assisted tools)
+- Angular 16+ (generated using AI-assisted)
 - Components, services, and UI layout connected to backend APIs
 - Functional UI demonstrating integration with backend
 
@@ -31,12 +31,11 @@ All backend functionality was designed and implemented independently, including:
 - API routing and controllers
 - Database schemas and data handling
 - Request validation and error handling
-- Integration with the frontend
 
 **Frontend:**  
-The frontend interface was generated entirely using AI-assisted tools based on textual instructions.  
+The frontend interface was generated entirely using AI-assisted based on textual instructions.  
 The code provides a functional UI.
-The frontend logic was scaffolded using AI to focus on backend architecture and full-stack integration
+The frontend logic was scaffolded using AI to focus on backend architecture and practice proper and professional use of AI.
 
 This demonstrates:
 - Ability to integrate backend with a working frontend
@@ -44,10 +43,7 @@ This demonstrates:
 - Problem-solving and backend system delivery
 
 ## Challenges & Learnings
-One of the main challenges in this project was implementing a secure **Authentication & Authorization** system. 
-- **The Issue:** Managing user sessions securely while using TypeScript's strict typing for request objects.
-- **The Solution:** I created custom middleware that validates JWT tokens and extends the Express Request interface to include the authenticated user's data. This ensured that only authorized users can access specific routes while maintaining type safety throughout the app.
-
+Security & Type Safety: Implementing a robust Authentication & Authorization system was a key challenge. I focused on securing user data using JWT and Bcrypt. To maintain high code quality, I extended the Express Request interface in TypeScript to handle user payloads globally, ensuring type safety across all protected routes.
 ## Getting Started
 
 ### Prerequisites
@@ -81,4 +77,3 @@ This project was developed as a **learning exercise** to:
 - Gain practical experience with backend development
 - Integrate backend with a functional frontend interface
 - Demonstrate problem-solving in an academic context
-- Deliver a functional, professional-looking system
